@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <form action="/promocoes" method="post">
+            <div>
+                <input type="text" name="titulo" />
+            </div>
+            <div>
+                <select name="livro[id]">
+                    <%for(var i=0; i<livros.length; i++) {%>
+                        <option value="<%=livros[i].id%>"><%=livros[i].titulo%></option>
+                    <%}%>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Cadastrar nova promoção" />
+            </div>
+        </form>
+    </body>
+</html>
