@@ -36,17 +36,6 @@ var connectMYSQL = function() {
             host : 'us-cdbr-iron-east-04.cleardb.net',
             database : 'heroku_a65a5e2be8d7667'
         });
-        /*
-        var urlConexao = process.env.CLEARDB_DATABASE_URL;
-        var grupos = urlConexao.match(/mysql:\/\/(.*):(.*)@(.*)\/(.*)\?reconnect=true/);
-        return mysql.createConnection({
-            user : grupos[1],
-            password : grupos[2],
-            host : grupos[3],
-            database : grupos[4],
-            debug : false
-        });
-        */
     }    
 }
 
